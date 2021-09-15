@@ -1,23 +1,30 @@
 ﻿<Properties StartupConfiguration="{C58B8E36-4646-416C-8B63-863E05BDABEB}|Default">
   <MonoDevelop.Ide.ItemProperties.RegContact5.0 PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RegContact5.0/Controllers/CompanyController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RegContact5.0/Pages/Index.cshtml">
     <Files>
       <File FileName="RegContact5.0/Models/Company.cs" Line="18" Column="25" />
       <File FileName="RegContact5.0/Services/JsonFileCompanyService.cs" Line="37" Column="24" />
-      <File FileName="RegContact5.0/Startup.cs" Line="34" Column="10" />
-      <File FileName="RegContact5.0/Pages/Index.cshtml" Line="18" Column="2" />
-      <File FileName="RegContact5.0/Pages/Index.cshtml.cs" Line="30" Column="53" />
-      <File FileName="RegContact5.0/Controllers/CompanyController.cs" Line="1" Column="1" />
+      <File FileName="RegContact5.0/Startup.cs" Line="29" Column="1" />
+      <File FileName="RegContact5.0/Pages/Index.cshtml" Line="2" Column="14" />
+      <File FileName="RegContact5.0/Pages/Index.cshtml.cs" Line="31" Column="1" />
+      <File FileName="RegContact5.0/Controllers/CompanyController.cs" Line="36" Column="1" />
+      <File FileName="RegContact5.0/Models/Contact.cs" Line="8" Column="23" />
+      <File FileName="RegContact5.0/Services/JsonFileContactService.cs" Line="31" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RegContact5.0" expanded="True">
             <Node name="RegContact5.0" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="CompanyController.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Index.cshtml" expanded="True" selected="True" />
               </Node>
-              <Node name="Pages" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="data" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
