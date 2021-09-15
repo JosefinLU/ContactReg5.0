@@ -16,3 +16,12 @@
         @company.Address
     </h4>
 }
+
+@foreach (var contact in Model.Contacts)
+{
+    <h4>
+        @contact.Name
+        @contact.Title
+        @contact.Telephone
+    </h4>
+}
