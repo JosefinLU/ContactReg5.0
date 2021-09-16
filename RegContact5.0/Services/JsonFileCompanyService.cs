@@ -25,11 +25,11 @@ namespace RegContact5._0.Services
 
         // retriving the data, converting the jsontext to product - deserialize (json - object)
         // IEnumerable - Grandparent of List, stuff you can foreach over
-        public IEnumerable<Company> GetCompany()
+        public List<Company> GetCompany()
         {
             using (var jsonFileReader = File.OpenText(JsonFileName))
             {
-                return JsonSerializer.Deserialize<Company[]>(jsonFileReader.ReadToEnd(),
+                return JsonSerializer.Deserialize<List<Company>>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
                     {
                         // Ignores uperandlowercase structure
@@ -37,5 +37,6 @@ namespace RegContact5._0.Services
                     });
             }
         }
+
     }
 }

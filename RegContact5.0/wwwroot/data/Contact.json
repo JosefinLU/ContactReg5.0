@@ -1,0 +1,24 @@
+[
+  {
+    "Name": "Sara Sundell",
+    "Title": "Manager",
+    "Telephone": "0709668877",
+    "CompanyId":  1
+  },
+  {
+    "Name": "Nicklas Larsson",
+    "Title": "Staff",
+    "Telephone": "0709664897",
+    "CompanyId": 2
+  },
+  {
+    "Name": "Jonna Sharp",
+    "Title": "Manager",
+    "CompanyId": 2
+  },
+  {
+    "Name": "Lars Gustavsson",
+    "Title": "Staff",
+    "CompanyId": 3
+  }
+]

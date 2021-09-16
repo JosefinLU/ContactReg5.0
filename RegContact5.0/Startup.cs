@@ -26,6 +26,7 @@ namespace RegContact5._0
         {
             services.AddRazorPages();
             services.AddTransient<JsonFileCompanyService>();
+            services.AddTransient<JsonFileContactService>();
             services.AddControllers();
         }
 

@@ -5,11 +5,13 @@ namespace RegContact5._0.Models
 {
     public class Company
     {
+        public int Id { get; }
         public string Name { get; set; }
         public string Address { get; set; }
 
-        public Company(string name, string address)
+        public Company(int id, string name, string address)
         {
+            this.Id = id;
             this.Name = name;
             this.Address = address;
         }

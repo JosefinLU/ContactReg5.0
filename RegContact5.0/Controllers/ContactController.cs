@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -12,28 +13,39 @@ namespace RegContact5._0.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CompanyController : Controller
+    public class ContactController : Controller
     {
-        // add properties and constructor
 
-        public JsonFileCompanyService CompanyService { get; }
+        // Properties and constructor, why is a constructor needed?
+        // when use set in this case of?
 
-        public CompanyController(JsonFileCompanyService companyService)
+        public JsonFileContactService ContactService { get; }
+
+        public ContactController(JsonFileContactService contactService)
         {
-            this.CompanyService = companyService;
+            this.ContactService = contactService;
         }
 
 
         // GET: api/values
-        // CompanyController = Compnay in url --> localhost:5001/Company
-        [Route("/Company")]
+        //ContactController
+        [Route("/Contact")]
         [HttpGet]
-        public List<Company> Get()
+        public List<Contact> Get()
         {
-            // Getting all the companies
-            Console.WriteLine("Andres Canal");
-            return CompanyService.GetCompany();
+            Console.WriteLine("ContactJL");
+            return ContactService.GetContact();
         }
+
+
+        [Route("/Companies/{CompanyId}")] //localhost:5001/Contact/CompanyName?CompanyName=Shanti
+        [HttpGet]
+        public List<Contact> Get(int CompanyId)
+        {
+            // Skicka in den parameter som du lägger i urlen, ex localhost:5001/Companies/1
+            return ContactService.GetContactsForCompany(CompanyId);
+        }
+
 
 
 
@@ -41,10 +53,10 @@ namespace RegContact5._0.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        /*public string Get(int id)
         {
             return "value";
-        }
+        }*/
 
         // POST api/values
         [HttpPost]

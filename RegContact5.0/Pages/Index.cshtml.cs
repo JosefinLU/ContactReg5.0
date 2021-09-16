@@ -16,18 +16,25 @@ namespace RegContact5._0.Pages
 
         public JsonFileCompanyService CompanyService;
 
-        public IEnumerable<Company> Companies { get; set; }
+        public List<Company> Companies { get; set; }
+
+        //Contact
+        public JsonFileContactService ContactService;
+        public List<Contact> Contacts { get; set; }
 
 
-        public IndexModel(ILogger<IndexModel> logger, JsonFileCompanyService companyService)
+        public IndexModel(ILogger<IndexModel> logger, JsonFileCompanyService companyService, JsonFileContactService contactService)
         {
             _logger = logger;
             CompanyService = companyService;
+            ContactService = contactService;
         }
 
         public void OnGet()
         {
+            Console.WriteLine("On get called");
             Companies = CompanyService.GetCompany();
+            Contacts = ContactService.GetContact();
         }
     }
 }

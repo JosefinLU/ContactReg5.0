@@ -12,7 +12,19 @@
 @foreach (var company in Model.Companies)
 {
     <h4>
+        @company.Id
         @company.Name
         @company.Address
     </h4>
+}
+
+@foreach (var contact in Model.Contacts)
+{
+<h4>
+    @contact.CompanyId
+    @contact.Name
+    @contact.Title
+    @contact.Telephone
+
+</h4>
 }

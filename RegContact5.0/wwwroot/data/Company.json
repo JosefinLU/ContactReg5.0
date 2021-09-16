@@ -1,13 +1,16 @@
 [
   {
+    "Id":  1,
     "Name": "Pita",
     "Address": "Gotgatan 90"
   },
   {
+    "Id":  2,
     "Name": "Bastard Burgers",
     "Address": "Nytorget 60"
   },
   {
+    "Id":  3,
     "Name": "Shanti",
     "Address": "Strandvagen 1"
   }
